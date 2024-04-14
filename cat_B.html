@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Xbox Category</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<style>
+    .carousel-item {
+        height: 300px;
+}
+
+    .c-img{
+        height: 100%;
+    }
+
+    .card-img{
+        min-height: 10px;
+        max-height: 50px;
+    }
+
+</style>
+
+<body>
+<head>
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+    <div class="container-fluid">
+        <a class="navbar-brand" href="index.html">
+            <img src="https://iconape.com/wp-content/files/tg/367763/svg/367763.svg" alt="Logo" height="30" class="d-inline-block align-top">
+        </a>
+
+        <!-- Navbar Toggler for smaller screens -->
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <!-- Align items to the left -->
+            <ul class="navbar-nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Products
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="productsDropdown">
+                        <a class="dropdown-item" href="cat_A.html">PlayStation</a>
+                        <a class="dropdown-item" href="cat_B.html">Xbox</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about_us.html">About Us</a>
+                </li>
+            </ul>
+
+            <!-- Search Bar -->
+            <form class="d-flex mx-auto">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-light" type="submit">Search</button>
+            </form>
+
+            <!-- Align items to the right -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#" role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
+                        <i class="fas fa-user"></i> Login
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="cart.html">
+                        <i class="fas fa-shopping-cart"></i></a>
+                </li>
+            </ul>
+        </div>
+    </div>
+</nav>
+
+        <!-- Login Modal -->
+        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="loginModalLabel">Login</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form>
+                            <div class="mb-3">
+                                <label for="email" class="form-label">Email</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="mb-3">
+                                <label for="password" class="form-label">Password</label>
+                                <div class="input-group">
+                                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
+                                    <input type="password" class="form-control" id="password" required>
+                                </div>
+                            </div>
+                            <div class="mb-3" style="text-align: center;">
+                                <button type="submit" class="btn btn-primary">Login</button>
+                            </div>
+                            <div class="form-check">
+                                <input type="checkbox" class="form-check-input" id="remember">
+                                <label class="form-check-label" for="remember">Remember</label>
+                            </div>
+                        </form>
+                    </div>
+                    <div class="modal-footer">
+                        <p class="text-muted">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" role="button">Sign up here</a></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+    <!-- Registration Modal -->
+    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="First Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-6">
+                                    <div class="mb-3">
+                                        <input type="text" class="form-control" placeholder="Last Name" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <input type="email" class="form-control" placeholder="Email" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control" placeholder="Password" required>
+                                    </div>
+                                </div>
+                                <div class="col-12">
+                                    <div class="mb-3">
+                                        <input type="password" class="form-control" placeholder="Confirm Password" required>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-3" style="text-align: center;">
+                            <button type="submit" class="btn btn-primary">Register</button>
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <p class="text-muted">Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" role="button">Login here</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+</head>
+
+<div class="container my-5">
+    <div class="row row-cols-2 row-cols-md-3 row-cols-lg-4 g-4">
+        <div class="col">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/b/bd/Celeste_video_game_logo.png" class="card-img-top " alt="Product 5">
+                <div class="card-body">
+                    <h5 class="card-title">Celeste</h5>
+                    <p class="card-text">Climb the Celeste mountain, battling your anxiety.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://vectorseek.com/wp-content/uploads/2023/07/Hi-Fi-Rush-Logo-Vector.jpg" class="card-img-top " alt="Product 5">
+                <div class="card-body">
+                    <h5 class="card-title">Hi-Fi Rush</h5>
+                    <p class="card-text">language is the music, turning us into the star performer within its rhythmic world.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/en/7/77/Sea_of_thieves_cover_art.jpg" class="card-img-top " alt="Product 5">
+                <div class="card-body">
+                    <h5 class="card-title">Sea Of Thieves</h5>
+                    <p class="card-text">Plunder, Sabotage. Be a Pirate.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://i.pinimg.com/originals/9e/2d/f3/9e2df3cdab69c38f5579926e4747441d.png" class="card-img-top " alt="Product 5">
+                <div class="card-body">
+                    <h5 class="card-title">Halo</h5>
+                    <p class="card-text">You are an Spartan helping earth against the covenant.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+        <div class="col">
+            <div class="card">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a9/Forza_Horizon_logo.svg/937px-Forza_Horizon_logo.svg.png" class="card-img-top " alt="Product 5">
+                <div class="card-body">
+                    <h5 class="card-title">Forza Horizon</h5>
+                    <p class="card-text">Be Fast, Be First.</p>
+                    <a href="#" class="btn btn-primary">Buy Now</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+    <!-- Bootstrap JS and Popper.js -->
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
+    <!-- Font Awesome JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
+</body>
+
+</html>
