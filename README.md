@@ -12,3 +12,4 @@ WebPage por my Integrated Assignment 4
 8. The administrator can insert products (creating an HTML form for it)                                                                      X
 9. The administrator can edit products                                                                                                       X
 10. The project is uploaded to a public hosting platform so that it is accessible and functional from the internet.                          Done
+11. 
