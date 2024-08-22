@@ -1,288 +1,30 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>INDEX</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            font-family: Arial, sans-serif;
+            text-align: center;
+        }
+        img {
+            width: 200px; /* Adjust the width */
+            height: auto; /* Maintains the aspect ratio */
+        }
+    </style>
 </head>
-
-<style>
-    .carousel-item {
-        height: 300px;
-}
-
-    .c-img{
-        height: 100%;
-    }
-
-    .card-img{
-        min-height: 10px;
-        max-height: 50px;
-    }
-
-</style>
-
 <body>
-<head>
-<!-- Navbar -->
-<nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="index.html">
-            <img src="https://iconape.com/wp-content/files/tg/367763/svg/367763.svg" alt="Logo" height="30" class="d-inline-block align-top">
-        </a>
-
-        <!-- Navbar Toggler for smaller screens -->
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <!-- Align items to the left -->
-            <ul class="navbar-nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="productsDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        Products
-                    </a>
-                    <div class="dropdown-menu" aria-labelledby="productsDropdown">
-                        <a class="dropdown-item" href="cat_A.html">PlayStation</a>
-                        <a class="dropdown-item" href="cat_B.html">Xbox</a>
-                    </div>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about_us.html">About Us</a>
-                </li>
-            </ul>
-
-            <!-- Search Bar -->
-            <form class="d-flex mx-auto">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" id="search_prod">
-                <button class="btn btn-outline-light" type="submit">Search</button>
-            </form>
-
-            <!-- Align items to the right -->
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#" role="button" data-bs-toggle="modal" data-bs-target="#loginModal">
-                        <i class="fas fa-user"></i> Login
-                    </a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="cart.html">
-                        <i class="fas fa-shopping-cart"></i></a>
-                </li>
-            </ul>
-        </div>
+    <div>
+        <h1>Karla, Nmms</h1>
+        <p>Compra el juego en Steam JASJSAJSAJSAJ</p>
+        <img src="https://i.ytimg.com/vi/7Fecr5Q0XL4/maxresdefault.jpg" alt="Bait">
     </div>
-</nav>
-
-        <!-- Login Modal -->
-        <form action="" onsubmit="logIn()">
-        <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
-            <div class="modal-dialog">
-                <div class="modal-content">
-                    <div class="modal-header">
-                        <h5 class="modal-title" id="loginModalLabel">Login</h5>
-                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                    </div>
-                    <div class="modal-body">
-                        
-                            <div class="mb-3">
-                                <label for="email" class="form-label">Email</label>
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
-                                    <input type="email" class="form-control" id="loginEmail" required>
-                                </div>
-                            </div>
-                            <div class="mb-3">
-                                <label for="password" class="form-label">Password</label>
-                                <div class="input-group">
-                                    <span class="input-group-text"><i class="fas fa-lock"></i></span>
-                                    <input type="password" class="form-control" id="password" required>
-                                </div>
-                            </div>
-                            <div class="mb-3" style="text-align: center;">
-                                <button type="submit" class="btn btn-primary">Login</button>
-                            </div>
-                            <div class="form-check">
-                                <input type="checkbox" class="form-check-input" id="remember">
-                                <label class="form-check-label" for="remember">Remember</label>
-                            </div>
-                    </div>
-                    <div class="modal-footer">
-                        <p class="text-muted">Don't have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#signupModal" role="button">Sign up here</a></p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </form>
-
-        <script>
-            var modalId = document.getElementById("Login_modal");
-      
-            modalId.addEventListener("show.bs.modal", function (event) {
-              // Button that triggered the modal
-              let button = event.relatedTarget;
-              // Extract info from data-bs-* attributes
-              let recipient = button.getAttribute("data-bs-whatever");
-      
-              // Use above variables to manipulate the DOM
-            });
-          </script>
-
-    <!-- Registration Modal -->
-    <div class="modal fade" id="signupModal" tabindex="-1" aria-labelledby="signupModalLabel" aria-hidden="true">
-        <div class="modal-dialog">
-            <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title" id="signupModalLabel">Sign Up</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <form>
-                        <div class="container">
-                            <div class="row">
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="First Name" required>
-                                    </div>
-                                </div>
-                                <div class="col-6">
-                                    <div class="mb-3">
-                                        <input type="text" class="form-control" placeholder="Last Name" required>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="mb-3">
-                                        <input type="email" class="form-control" placeholder="Email" required>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="mb-3">
-                                        <input type="password" class="form-control" placeholder="Password" required>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class="mb-3">
-                                        <input type="password" class="form-control" placeholder="Confirm Password" required>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="mb-3" style="text-align: center;">
-                            <button type="submit" class="btn btn-primary">Register</button>
-                        </div>
-                    </form>
-                </div>
-                <div class="modal-footer">
-                    <p class="text-muted">Already have an account? <a href="#" data-bs-toggle="modal" data-bs-target="#loginModal" role="button">Login here</a></p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-
-</head>
-
-
-    <!-- Carousel -->
-
-
-    <div id="carouselId" class="carousel slide" data-bs-ride="carousel">
-       
-        <div class="carousel-inner" role="listbox">
-            <div class="carousel-item active">
-                <img
-                    src="https://blog.latam.playstation.com/tachyon/sites/3/2024/01/b25e3343846e900747d7511e53f7b76b4385728b.jpg?resize=1900%2C470&zoom=1"
-                    class="object-fit w-100 d-block c-img"
-                    alt="First slide"
-                />
-            </div>
-            <div class="carousel-item">
-                <img
-                    src="https://media.tycsports.com/files/2021/12/30/376487/god-of-war-ragnarok.jpg"
-                    class="object-fit w-100 d-block c-img"
-                    alt="Second slide"
-                />
-            </div>
-            <div class="carousel-item">
-                <img
-                    src="https://blog.latam.playstation.com/tachyon/sites/3/2023/07/89f0eb16cd57883a9b68a1c872deb3393aa8e6c7-scaled.jpg?resize=1088%2C612&crop_strategy=smart&zoom=1.5"
-                    class="w-100 d-block c-img"
-                    alt="Third slide"
-                />
-            </div>
-        </div>
-        <button
-            class="carousel-control-prev"
-            type="button"
-            data-bs-target="#carouselId"
-            data-bs-slide="prev"
-        >
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Previous</span>
-        </button>
-        <button
-            class="carousel-control-next"
-            type="button"
-            data-bs-target="#carouselId"
-            data-bs-slide="next"
-        >
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="visually-hidden">Next</span>
-        </button>
-    </div>
-
-
-    
-    <main>
-        <div class="container">
-          <h2 class="mt-5">Products Section</h2>
-          
-         
-          <div
-            id="info" class="row row-cols-1 row-cols-md-2 row-cols-lg-3 row-cols-xl-4 g-4 mt-3"
-          >
-            
-          </div>
-        </div>
-      </main>
-  
-      
-    
-  
-    
-  
-      <!-- pagination -->
-  
-      <nav
-        aria-label="Page navigation example"
-        class="justify-content-center d-flex"
-      >
-        <ul id="pagination" class="pagination">
-        </ul>
-      </nav>
-
-    <!-- Bootstrap JS and Popper.js -->
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.min.js"></script>
-    <!-- Font Awesome JS -->
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/js/all.min.js"></script>
-    <script src="./js/index.js"></script>
-    <script src="./js/navbar.js"></script>
-    <script src="./js/data.js"></script>
-
-
-
-
-    
 </body>
-
 </html>
